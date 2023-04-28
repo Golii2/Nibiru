@@ -2,19 +2,19 @@
 
 #!/bin/bash
 
-read -p "Введите значение для NIBIRU_MONIKER: " NIBIRU_MONIKER
-read -p "Введите значение для NIBIRU_WALLET: " NIBIRU_WALLET
+read -p "Введите значение для MONIKER: " MONIKER
+read -p "Введите значение для WALLET: " WALLET
 
-export NIBIRU_MONIKER=$NIBIRU_MONIKER
-export NIBIRU_WALLET=$NIBIRU_WALLET
+export MONIKER=$MONIKER
+export WALLET=$WALLET
 
 echo "Значения успешно присвоены:"
-echo "NIBIRU_MONIKER=${NIBIRU_MONIKER}"
-echo "NIBIRU_WALLET=${NIBIRU_WALLET}"
+echo "MONIKER=${MONIKER}"
+echo "WALLET=${WALLET}"
 
 NIBIRU_CHAIN="nibiru-itn-1"
 
-echo 'export NIBIRU_MONIKER='${NIBIRU_MONIKER} >> $HOME/.bash_profile
+echo 'export MONIKER='${MONIKER} >> $HOME/.bash_profile
 echo 'export NIBIRU_CHAIN='${NIBIRU_CHAIN} >> $HOME/.bash_profile
-echo 'export NIBIRU_WALLET='${NIBIRU_WALLET} >> $HOME/.bash_profile
+echo 'export WALLET='${WALLET} >> $HOME/.bash_profile
 source $HOME/.bash_profile
