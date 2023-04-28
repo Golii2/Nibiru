@@ -4,10 +4,7 @@ nibid keys add $NIBIRU_WALLET --recover
 NIBIRU_ADDR=$(nibid keys show $NIBIRU_WALLET -a)
 echo 'export NIBIRU_ADDR='${NIBIRU_ADDR} >> $HOME/.bash_profile
 source $HOME/.bash_profile
-FAUCET_URL="https://faucet.itn-1.nibiru.fi/"
-NIBIRU_ADDR="..."
-curl -X POST -d '{"address": "'"$NIBIRU_ADDR"'", "coins": ["11000000unibi","100000000unusd","100000000uusdt"]}' $FAUCET_URL
-sleep 30
+
 nibid query bank balances $NIBIRU_ADDR
 sleep 5
 
