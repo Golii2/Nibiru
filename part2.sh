@@ -1,9 +1,11 @@
 #!/bin/bash
 read -p "Введите значение переменной NIBIRU_MONIKER: " NIBIRU_MONIKER
-echo "Переменная NIBIRU_MONIKER равна: $NIBIRU_MONIKER
-NIBIRU_CHAIN="nibiru-itn-1"
+echo "Переменная NIBIRU_MONIKER равна: $NIBIRU_MONIKER"
+
 read -p "Введите значение переменной NIBIRU_WALLET: " NIBIRU_WALLET
-echo "Переменная NIBIRU_WALLET равна: $NIBIRU_WALLET
+echo "Переменная NIBIRU_WALLET равна: $NIBIRU_WALLET"
+
+NIBIRU_CHAIN="nibiru-itn-1"
 #1
 echo 'export NIBIRU_MONIKER='${NIBIRU_MONIKER} >> $HOME/.bash_profile
 echo 'export NIBIRU_CHAIN='${NIBIRU_CHAIN} >> $HOME/.bash_profile
