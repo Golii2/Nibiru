@@ -1,4 +1,5 @@
 #!/bin/bash
+read -p "Введите значение переменной NIBIRU_MONIKER: " 
 #1
 echo 'export NIBIRU_MONIKER='${NIBIRU_MONIKER} >> $HOME/.bash_profile
 echo 'export NIBIRU_CHAIN='${NIBIRU_CHAIN} >> $HOME/.bash_profile
