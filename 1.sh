@@ -1,13 +1,21 @@
 #!/bin/bash
-while [[ -z $NIBIRU_MONIKER ]]; do
-    read -p "Введите значение для NIBIRU_MONIKER: " NIBIRU_MONIKER
-done
 
-echo "Вы ввели: $NIBIRU_MONIKER"
+# Запрашиваем у пользователя значение для переменной
+echo "Введите значение для переменной NIBIRU_MONIKER:"
+read NIBIRU_MONIKER
 
-while [[ -z $NIBIRU_WALLET ]]; do
-    read -p "Введите значение для NIBIRU_WALLET: " NIBIRU_WALLET
+# Присваиваем введенное значение переменной VARNAME
+export NIBIRU_MONIKER="$NIBIRU_MONIKER"
 
-done
+# Подтверждаем, что значение переменной успешно задано
+echo "Значение переменной VARNAME: $NIBIRU_MONIKER"
 
-echo "Вы ввели: $NIBIRU_WALLET"
+# Запрашиваем у пользователя значение для переменной
+echo "Введите значение для переменной NIBIRU_WALLET:"
+read NIBIRU_WALLET
+
+# Присваиваем введенное значение переменной VARNAME
+export NIBIRU_WALLET="$NIBIRU_WALLET"
+
+# Подтверждаем, что значение переменной успешно задано
+echo "Значение переменной VARNAME: $NIBIRU_WALLET"
